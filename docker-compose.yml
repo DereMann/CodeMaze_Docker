@@ -16,7 +16,7 @@ services:
    accountownerapp:
      depends_on:
        - db
-     image: codemazeblog/accountowner
+     image: codemazeblog/accountowner:runtime
      ports:
        - "8080:80"
 
