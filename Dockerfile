@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build
+FROM microsoft/aspnetcore-build as build-image
  
 WORKDIR /home/app
  
@@ -13,7 +13,11 @@ COPY . .
 RUN dotnet test ./Tests/Tests.csproj
  
 RUN dotnet publish ./AccountOwnerServer/AccountOwnerServer.csproj -o /publish/
+
+FROM microsoft/aspnetcore
  
 WORKDIR /publish
+
+COPY --from=build-image /publish .
  
 ENTRYPOINT ["dotnet", "AccountOwnerServer.dll"]
