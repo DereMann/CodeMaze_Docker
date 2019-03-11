@@ -21,7 +21,7 @@ namespace Tests
             var result = mockRepo.Object.GetAllOwners().ToList();
 
             // Assert
-            Assert.IsType<List<Owner>>(result);
+            Assert.IsNotType<List<Owner>>(result);
             Assert.Single(result);
         }
 
