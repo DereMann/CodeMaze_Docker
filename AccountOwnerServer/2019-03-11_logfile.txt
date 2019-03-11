@@ -1,0 +1,15 @@
+2019-03-11 22:37:07.1817 ERROR Owner object sent from client is null.
+2019-03-11 22:37:19.5239 ERROR Owner object sent from client is null.
+2019-03-11 22:38:21.7922 ERROR Owner object sent from client is null.
+2019-03-11 22:38:58.2207 ERROR Owner object sent from client is null.
+2019-03-11 22:38:59.3732 ERROR Owner object sent from client is null.
+2019-03-11 22:39:13.1529 INFO Returned all owners from database.
+2019-03-11 22:40:39.7365 ERROR Owner object sent from client is null.
+2019-03-11 22:40:42.9610 ERROR Owner object sent from client is null.
+2019-03-11 22:40:45.5778 ERROR Owner object sent from client is null.
+2019-03-11 22:40:47.7920 ERROR Owner object sent from client is null.
+2019-03-11 22:40:48.9343 ERROR Owner object sent from client is null.
+2019-03-11 22:40:49.7761 ERROR Owner object sent from client is null.
+2019-03-11 22:40:50.5303 ERROR Owner object sent from client is null.
+2019-03-11 22:40:51.4849 ERROR Owner object sent from client is null.
+2019-03-11 22:40:52.2402 ERROR Owner object sent from client is null.
