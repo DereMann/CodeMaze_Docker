@@ -1,0 +1,8 @@
+version: '3.0'
+ 
+services:
+   accountownerapp:
+     image: codemazeblog/accountownerapp
+     ports:
+       - "8080:80"
+       
