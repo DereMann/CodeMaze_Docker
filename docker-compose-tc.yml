@@ -17,6 +17,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
  
 volumes:
-  teamcity-server-datadir: ~/teamcity-server-datadir
-  teamcity-server-logs: ~/teamcity-server-logs
-  teamcity-agent-conf: ~/teamcity-agent-conf
+  teamcity-server-datadir:
+  teamcity-server-logs:
+  teamcity-agent-conf:
