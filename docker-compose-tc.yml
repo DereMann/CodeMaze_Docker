@@ -12,6 +12,8 @@ services:
        - dbdatatc:/var/lib/mysql
      restart: always
   teamcity:
+    depends_on:
+      - db
     image: jetbrains/teamcity-server:latest
     volumes:
       - teamcity-server-datadir:/data/teamcity-server/datadir
