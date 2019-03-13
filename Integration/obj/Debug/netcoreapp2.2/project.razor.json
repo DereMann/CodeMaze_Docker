@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\stimpflma\\Documents\\_Projekte\\dev\\2019-03 CodeMaze Docker\\docker-series\\Integration\\Integration.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
