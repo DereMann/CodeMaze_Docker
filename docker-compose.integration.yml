@@ -15,7 +15,7 @@ services:
   accountownerapp:
     depends_on:
       - db
-    image: localhost:50000/codemazeblog/accountowner:build-2
+    image: localhost:50000/codemazeblog/accountowner:build-2${BUILD_NUMBER_A}
   integration:
     depends_on:
       - accountownerapp
