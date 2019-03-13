@@ -37,14 +37,14 @@ namespace Integration
         [Fact]
         public async Task GetAllOwners_ReturnsAListOfOwners()
         {
-        // Act
-		var response = await _context.Client.GetAsync("/api/owner");
-		response.EnsureSuccessStatusCode();
-		var responseString = await response.Content.ReadAsStringAsync();
-		var owners = JsonConvert.DeserializeObject<List<Owner>>(responseString);
- 
-		// Assert
-		Assert.NotEmpty(owners);
+            // Act
+            var response = await _context.Client.GetAsync("/api/owner");
+            response.EnsureSuccessStatusCode();
+            var responseString = await response.Content.ReadAsStringAsync();
+            var owners = JsonConvert.DeserializeObject<List<Owner>>(responseString);
+    
+            // Assert
+            Assert.Empty(owners);
         }
     }
 }
