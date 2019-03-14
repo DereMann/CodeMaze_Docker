@@ -44,7 +44,7 @@ namespace Integration
             var owners = JsonConvert.DeserializeObject<List<Owner>>(responseString);
     
             // Assert
-            Assert.Empty(owners);
+            Assert.NotEmpty(owners);
         }
     }
 }
