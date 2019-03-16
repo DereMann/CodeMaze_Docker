@@ -1,0 +1,1 @@
+docker run -d -p 50000:5000 --restart always --name my-registry registry:latest

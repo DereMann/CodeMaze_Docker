@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/home/martin/Documents/Dev/2019-03 CodeMaze/CodeMaze_Docker/Integration/Integration.csproj",
+  "TargetFramework": "netcoreapp2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
