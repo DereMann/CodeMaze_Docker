@@ -11,5 +11,8 @@ RUN dotnet restore
 COPY . .
  
 WORKDIR /home/app/Integration/
+COPY wait-for-it.sh .
+
+RUN chmod +x ./wait-for-it.sh
  
 #ENTRYPOINT ["dotnet", "test", "--verbosity=normal"]
