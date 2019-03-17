@@ -20,7 +20,7 @@ services:
      image: codemazeblog/accountowner:runtime
      ports:
        - "8080:80"
-     command: ["./wait-for-it.sh", "db:3306", "--", "dotnet", "AccountOwnerServer.dll"]
+     command: ["./wait-for-it.sh", "db:3306", "-t", "0", "--", "dotnet", "AccountOwnerServer.dll"]
 
 volumes:
     dbdata:
