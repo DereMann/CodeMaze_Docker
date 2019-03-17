@@ -26,8 +26,7 @@ services:
       dockerfile: Dockerfile.Integration
     environment:
       - TEAMCITY_PROJECT_NAME
-    command: ["./wait-for-it.sh", "db:3306", "-t", "0", "--", "dotnet", "test"]
-    #, "--verbosity=normal"]
+    command: ["./wait-for-it.sh", "db:3306", "-t", "0", "--", "dotnet", "test", "--verbosity=normal"]
       
 volumes:
     dbdata:
