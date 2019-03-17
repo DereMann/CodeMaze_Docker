@@ -16,9 +16,11 @@ services:
    accountownerapp:
      depends_on:
        - db
+     build: .
      image: codemazeblog/accountowner:runtime
      ports:
        - "8080:80"
+     command: ["./wait-for-it.sh", "db:3306", "--", "dotnet", "AccountOwnerServer.dll"]
 
 volumes:
     dbdata:

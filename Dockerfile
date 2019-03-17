@@ -19,7 +19,9 @@ FROM microsoft/aspnetcore
 WORKDIR /publish
 
 COPY --from=build-image /publish .
-COPY wait-for-it.sh /wait-for-it.sh
+COPY wait-for-it.sh .
+
+RUN chmod +x ./wait-for-it.sh
 
 ENV TEAMCITY_PROJECT_NAME = ${TEAMCITY_PROJECT_NAME}
  
