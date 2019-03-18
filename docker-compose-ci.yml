@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+    jenkins:
+        container_name: jenkins-master
+        ports:
+            - '8080:8080'
+            - '50001:50000'
+        image: jenkins-master #localhost:5000/jenkins
+    jenkins-slave:
+        container_name: jenkins-slave
+        restart: always
+        environment:
+            - 'JENKINS_URL=http://jenkins:8080'
+        image: jenkins-slave #localhost:5000/jenkins-slave
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock  # Expose the docker daemon in the container
+            - /home/jenkins2:/home/jenkins # Avoid mysql volume mount issue
+        depends_on:
+            - jenkins
