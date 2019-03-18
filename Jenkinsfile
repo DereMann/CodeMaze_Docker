@@ -7,6 +7,6 @@ node('docker') {
         sh "docker build -t accountownerapp:test-B${BUILD_NUMBER} -f Dockerfile.Integration ."
   
     stage 'Integration Test'
-        sh "docker-compose -f docker-compose.integration.yml up --force-recreate --abort-on-container-exit"
-        sh "docker-compose -f docker-compose.integration.yml down -v"
+        sh "docker-compose -f docker-compose.integration.j.yml up --force-recreate --abort-on-container-exit"
+        sh "docker-compose -f docker-compose.integration.j.yml down -v"
 }
