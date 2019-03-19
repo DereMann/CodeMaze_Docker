@@ -14,6 +14,6 @@ services:
         image: jenkins-slave #localhost:5000/jenkins-slave
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock  # Expose the docker daemon in the container
-            - /home/jenkins2:/home/jenkins # Avoid mysql volume mount issue
+            - /home/jenkins2:/var/jenkins # Avoid mysql volume mount issue
         depends_on:
             - jenkins
