@@ -6,6 +6,8 @@ services:
             - '8080:8080'
             - '50001:50000'
         image: jenkins-master #localhost:5000/jenkins
+        volumes:
+            - jenkins_home:/var/jenkins_home 
     jenkins-slave:
         container_name: jenkins-slave
         restart: always
