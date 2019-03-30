@@ -3,7 +3,7 @@ services:
     jenkins:
         container_name: jenkins-master
         ports:
-            - '8080:8080'
+            - '8081:8080'
             - '50001:50000'
         image: jenkins-master #localhost:5000/jenkins
         volumes:
