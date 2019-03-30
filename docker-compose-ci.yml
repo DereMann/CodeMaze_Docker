@@ -19,3 +19,6 @@ services:
             - /home/jenkins:/home/jenkins # Avoid mysql volume mount issue
         depends_on:
             - jenkins
+
+volumes:
+    jenkins_home:
